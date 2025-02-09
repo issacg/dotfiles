@@ -184,3 +184,6 @@ style = 'bold yellow'
 
 [gcloud.region_aliases]
 me-west1 = '🇮🇱'
+
+[terraform]
+format = 'via [$symbol TF$version]($style) '
