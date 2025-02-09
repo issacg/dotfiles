@@ -1,0 +1,13 @@
+{
+	"name": "My dotfiles",
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"configureZshAsDefaultShell": true
+		},
+		"ghcr.io/devcontainers/features/github-cli:1": {},
+		"ghcr.io/devcontainers-contrib/features/pre-commit:2": {},
+		"ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence:1": {}
+	},
+	"postCreateCommand": "./install.sh && ./local.sh"
+}
