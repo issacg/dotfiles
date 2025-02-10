@@ -186,4 +186,4 @@ style = 'bold yellow'
 me-west1 = '🇮🇱'
 
 [terraform]
-format = 'via [$symbol TF$version]($style) '
+format = 'via TF[$symbol$version]($style) '
