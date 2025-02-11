@@ -1,9 +1,6 @@
 #!/bin/zsh
 
 # Install oh-my-zsh (it may already be there)
-echo "Downloading Oh My Zsh!..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 echo "Installing fonts..."
 font_dir="$HOME/.local/share/fonts"
 mkdir -p $font_dir
