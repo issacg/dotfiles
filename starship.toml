@@ -190,3 +190,10 @@ format = 'via TF[$symbol$version]($style) '
 
 [kubernetes]
 disabled = false
+format = '[$symbol$user@$context( \($namespace\))]($style) in '
+
+[[kubernetes.contexts]]
+context_pattern = "gke_.*_(?P<cluster>[\\w-]+)"
+context_alias = "gke-$cluster"
+user_pattern = "gke_.*_(?P<cluster>[\\w-]+)"
+user_alias = "<auto>"
