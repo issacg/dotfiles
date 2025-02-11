@@ -187,3 +187,6 @@ me-west1 = '🇮🇱'
 
 [terraform]
 format = 'via TF[$symbol$version]($style) '
+
+[kubernetes]
+disabled = false
