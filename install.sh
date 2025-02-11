@@ -21,5 +21,6 @@ mkdir -p ~/.config
 cp starship.toml ~/.config/starship.toml
 
 echo 'eval "$(starship init zsh)"' >> ~/.zshrc
+echo 'eval "$(starship init bash)"' >> ~/.bashrc
 
 echo "Done!"
