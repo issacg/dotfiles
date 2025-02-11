@@ -20,4 +20,9 @@ cp starship.toml ~/.config/starship.toml
 echo 'eval "$(starship init zsh)"' >> ~/.zshrc
 echo 'eval "$(starship init bash)"' >> ~/.bashrc
 
+if command -v jq &> /dev/null; then
+    # TODO: Install JQ if missing...
+    jq '."terminal.integrated.defaultProfile.linux" = "zsh"' ~/.vscode-server/data/Machine/settings.json > settings.json.tmp && mv settings.json.tmp ~/.vscode-server/data/Machine/settings.json
+fi
+
 echo "Done!"
