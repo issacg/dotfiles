@@ -25,4 +25,6 @@ if command -v jq &> /dev/null; then
     jq '."terminal.integrated.defaultProfile.linux" = "zsh"' ~/.vscode-server/data/Machine/settings.json > settings.json.tmp && mv settings.json.tmp ~/.vscode-server/data/Machine/settings.json
 fi
 
+cp .gitconfig ~/.gitconfig
+
 echo "Done!"
